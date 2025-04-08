@@ -1,14 +1,7 @@
 function reverseStrings(arr) {
-    
-    arr.sort();
-  
      const reversedArray = arr.map(str => str.split('').reverse().join(''));
+     return reversedArray.sort();
 
-    for (let i = 1; i < reversedArray.length; i += 2) {
-      reversedArray[i] = reversedArray[i].split('').reverse().join('');
-    }
-  
-    return reversedArray;
   }
   const array=['ushi','dorothy']
   console.log(reverseStrings(array))
